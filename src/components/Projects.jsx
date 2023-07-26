@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import img1 from "../assets/images/project-img1.png";
-import img2 from "../assets/images/project-img2.png";
-import img3 from "../assets/images/project-img3.png";
+import img1 from "../assets/images/Shooters.png";
+import img2 from "../assets/images/LeveType.png";
+import img3 from "../assets/images/BlogNutri.png";
+import img4 from "../assets/images/MyApp.png";
+import img5 from "../assets/images/MyApp2.png";
+import img6 from "../assets/images/MyApp3.png";
 
 import "../styles.css";
 import ProjectCard from "./ProjectCard";
@@ -12,39 +15,42 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Shooters",
+      description: "Landing Page & Website",
+      link:'https://www.figma.com/file/CcP1tC9vxQIolpuUpHd2g6/Shooters?type=design&mode=design&t=pHvz7Sf0kQ5ebWLx-0',
       img: img1,
     },
     {
       id: 2,
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "typescript community",
+      description: "Landing Page & Website",
+      link:'https://www.figma.com/file/a2hRKllClU29L6KOxfM61Z/LandingPage-LeveType?type=design&mode=design&t=Eqqhxtv6YFTnSwco-0',
       img: img2,
     },
     {
       id: 3,
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Blog Nutrição",
+      description: "Landing Page & Website",
+      link:'https://www.figma.com/file/NEhtGZX147pByJbRvo5k02/Landing-Page-Nutri?type=design&node-id=0-1&mode=design&t=Eqqhxtv6YFTnSwco-0',
       img: img3,
     },
     {
       id: 4,
-      title: "Business Startup",
-      description: "Design & Development",
-      img: img2,
+      title: "AnimeDBolso",
+      description: "With AnimeDBolso, anime fans can create their own personalized lists and track their progress in an easy and organized way.",
+      img: img4,
     },
     {
       id: 5,
-      title: "Business Startup",
+      title: "Rick And Morty",
       description: "Design & Development",
-      img: img3,
+      img: img5,
     },
     {
       id: 6,
-      title: "Business Startup",
+      title: "Advinha Bia",
       description: "Design & Development",
-      img: img1,
+      img: img6,
     },
   ];
 
@@ -65,7 +71,7 @@ function Projects() {
               durum == 1 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
             }`}
           >
-            Projects
+            All Projects
           </button>
           <button
             onClick={() => setDurum(2)}
@@ -73,7 +79,7 @@ function Projects() {
               durum === 2 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
             }  `}
           >
-            Text-1
+            UI/UX - Website
           </button>
           <button
             onClick={() => setDurum(3)}
@@ -81,7 +87,7 @@ function Projects() {
               durum === 3 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
             }`}
           >
-            Text-2
+            React Native
           </button>
         </div>
         <div className="grid grid-cols-3 p-10 justify-center items-center gap-8 lg:grid-cols-2 tl:grid-cols-1  ">
@@ -92,20 +98,21 @@ function Projects() {
         {durum === 2 ? (
           <div
             id="text2"
-            className="tab-pane  text-center text-white py-16 max-w-4xl mx-auto lg:p-5 "
+            className="grid grid-cols-3 p-10 justify-center items-center gap-8 lg:grid-cols-2 tl:grid-cols-1  "
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            atque porro quasi dolorum facere tempore maxime nemo quia nulla
-            blanditiis doloribus, dolore, voluptas aspernatur harum facilis
-            cumque magni soluta sapiente.
+            <ProjectCard item={projects[0]}/>
+            <ProjectCard item={projects[1]}/>
+            <ProjectCard item={projects[2]}/>
           </div>
         ) : null}
         {durum === 3 ? (
           <div
-            id="text1"
-            className="tab-pane  text-center text-white py-5   lg:p-5"
+            id="text3"
+            className="grid grid-cols-3 p-10 justify-center items-center gap-8 lg:grid-cols-2 tl:grid-cols-1  "
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, nisi.
+            <ProjectCard item={projects[3]}/>
+            <ProjectCard item={projects[4]}/>
+            <ProjectCard item={projects[5]}/>
           </div>
         ) : null}
       </div>

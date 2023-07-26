@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "../styles.css";
 import { Navigation } from "swiper";
 import { Pagination } from "swiper";
+
 import img from "../assets/images/meter1.svg";
 import bg from "../assets/images/banner-bg.png"
 

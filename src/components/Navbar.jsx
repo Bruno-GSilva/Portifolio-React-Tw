@@ -49,15 +49,15 @@ function Navbar() {
           </ul>
 
           <div className="icon text-lg flex gap-4  lg:gap-8 lg:my-10">
-            <a href="https://twitter.com/reayhs" target="_blank">
+            <a href="https://github.com/Bruno-GSilva" target="_blank">
               <i className="fa-brands fa-github border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
 
-            <a href="https://www.instagram.com/iburakz/" target="_blank">
+            <a href="https://www.instagram.com/bruno_gsilva22/" target="_blank">
               <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
             <a
-              href="https://github.com/Reayhs/react-tailwind-portfolio"
+              href="https://www.linkedin.com/in/bruno-gomes-061786255/"
               target="_blank"
             >
               <i className="fa-brands fa-linkedin border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
@@ -65,7 +65,7 @@ function Navbar() {
           </div>
           <div className="btn">
             <button className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
-              Let's Connect
+              Contact
             </button>
           </div>
         </nav>
