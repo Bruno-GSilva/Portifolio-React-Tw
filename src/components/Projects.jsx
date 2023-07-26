@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img1 from "../assets/images/Shooters.png";
 import img2 from "../assets/images/LeveType.png";
-import img3 from "../assets/images/BlogNutri.png";
+import img3 from "../assets/images/Shooters.png";
 import img4 from "../assets/images/MyApp.png";
 import img5 from "../assets/images/MyApp2.png";
 import img6 from "../assets/images/MyApp3.png";
